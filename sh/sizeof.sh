@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # sizeof
-# v0.3
+# v0.3.1
 # Get the size of a file in all relevant units
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -127,4 +127,7 @@ done
 if [ $# -gt 1 ]; then
 	echo "Total size:"
 	printSize $total
+elif [ $# = 1 ]; then
+	printSize $total
 fi
+
